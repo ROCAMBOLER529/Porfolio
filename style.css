@@ -1,6 +1,8 @@
-/* ---------------------------------- */
-/* General */
-/* ---------------------------------- */
+/* +----------------------+ */
+/* |                      | */
+/* | CSS PARA EL PORFOLIO | */
+/* |                      | */
+/* +----------------------+ */
 
 * {
     margin: auto;
@@ -8,18 +10,18 @@
     /* background-color: #9f9f9f; */
 }
 
+hr {
+    color: red;
+}
+
 body {
-    background-color: rgba(145, 48, 48, 0.9);
+    background-color: rgba(10, 3, 3, 0.9);
 }
 
 form, img {
     width: 40vw;
     object-fit: contain;
 } 
-
-/* ---------------------------------- */
-/* Classes */
-/* ---------------------------------- */
 
 .plano {
     padding-left: 10px;
@@ -36,18 +38,146 @@ form, img {
     padding-bottom: 3vh;
 }
 
-.navbar-boton {
+
+
+/* -------------- */
+/* NAVBAR */
+/* -------------- */
+
+#NavBar {
+    color: red;
+}
+
+.navbar {
+    background-color: darkred;
+}
+
+.navbar-nav a {
+    color: red;
+    font-weight: bold;
+}
+
+/* .navbar-boton {
     background-color: azure;
+} */
+
+/* -------------- */
+/* CARTA */
+/* -------------- */
+
+
+#carta {
+    background-color: rgba(37, 37, 37, 0.9);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.card, .card-body {
+    color: rgba(37, 37, 37, 0.9);
 }
 
 .nickname {
     font-family:'Times New Roman', Times, serif
 }
 
-/* ---------------------------------- */
-/* ID */
-/* ---------------------------------- */
+.etiqueta-main {
+    color: red;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
-#carta {
-    background-color: rgba(145, 48, 48, 0.9);
+.etiqueta, .etiqueta-body {
+    color: red;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* -------------- */
+/* ACERCA DE MI */
+/* -------------- */
+
+#AboutMe {
+    background-color: darkred;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.texto {
+    color: red;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* -------------- */
+/* PORFOLIO */
+/* -------------- */
+
+#porfolio {
+    background-color: rgba(37, 37, 37, 0.9);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#colorGame, #toDo, #weatherChannel {
+    background-color: darkred;
+}
+
+#colorGame:hover, #toDo:hover, #weatherChannel:hover {
+    border: solid 3px red;
+}
+
+#texto1, #texto2, #texto3 {
+    color: red;
+}
+
+#carusel {
+    background-color: darkred;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* -------------- */
+/* CONTACTO */
+/* -------------- */
+
+.lobelo:hover {
+    border: solid 1px red;
+}
+
+#contacto {
+    background-color: rgba(37, 37, 37, 0.9);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#usuario, #correo, #telefono, #mensaje {
+    color: red;
+}
+
+#help1, #help2 {
+    color: lightcoral;
+}
+
+#submit {
+    background-color: red;
+    border: solid 1px red;
+}
+
+#submit:hover {
+    opacity: 70%;
+}
+
+/* -------------- */
+/* FOOTER */
+/* -------------- */
+
+#footer {
+    background-color: darkred;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#location, #AboutMeFooter, #fb, #In, #git {
+    color: red;
 }

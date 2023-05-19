@@ -1,3 +1,9 @@
+<!-- +-----------------------+ -->
+<!-- |                       | -->
+<!-- | HTML PARA EL PORFOLIO | -->
+<!-- |                       | -->
+<!-- +-----------------------+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,66 +28,97 @@
     />
   </head>
   <body>
+
+    <!-- NavBar -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <div id="barra" class="container-fluid">
+        <a id="NavBar" class="navbar-nav" href="#">NavBar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sections
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#AboutMe">Acerca de mi</a></li>
+                <li><a class="dropdown-item" href="#porfolio">Proyectos</a></li>
+                <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+              </ul>
+            </li>            
+          </ul>
         </div>
       </div>
     </nav>
-
-    <!-- encabezado -->
+    
+    <!-- Encabezado -->
 
     <div id="carta">
-      <div class="card centrado" style="width: 18rem">
-        <img src="fat myself.PNG" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h3 class="card-title centrar nickname">ROCAMBOLER529</h3>
-          <p class="card-text nickname">Web Fullstack developer.</p>
-        </div>
-      </div>
+      <img src="R.jpg" alt="Acá va una imagen" />
+      <h3 class="etiqueta">Hola, soy Francisco</h3>
+      <p class="etiqueta-main">Soy Francisco Avalos, también conocido como ROCAMBOLER529, y soy Desarrollador Web Fullstack y técnico en sistemas informáticos.</p>
+      <p class="etiqueta-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur, autem saepe, voluptate architecto asperiores nemo hic aliquam eaque, aut iure quod obcaecati nihil voluptatum et esse consequuntur blanditiis atque.</p>
+    </div>
+
+    <!-- Acerca de mi -->
+
+    <div id="AboutMe">
+      <h3 class="texto">Acerca de Mi</h3>
+      <hr>
+      <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut consectetur, facere voluptatum ut quia nobis harum ipsum maiores quos! Dignissimos non culpa eveniet quaerat deleniti iste unde vero sit magnam!</p>
+      <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi earum aperiam excepturi ratione corrupti error, velit perspiciatis eum quidem nostrum? Ut inventore repellat aliquam dicta deleniti quidem deserunt perferendis hic!</p>
     </div>
 
     <!-- porfolio -->
 
-    <div class="porfolio row au">
-      <button type="button">
-        <img src="fat myself.PNG" alt="...">
-      </button>
-      <a href="../Clase 1/index.html" class="col-1">Cruzadas</a>
-      <a href="../Clase 2/star wars/index.html" class="">star wars</a>
-      <a href="../Clase 3/form mascota/index.html">InstPet</a>
-      <a href="../Clase 4/pancho/index.html">PANCHO</a>
-      <a href="../Clase 5/responsive/index.html">responsive</a>
+    <div class="row" id="porfolio">
+        <a href="https://adorable-clafoutis-a03d90.netlify.app/" class="card" style="width: 18rem;" id="colorGame">
+         <img src="ColorGame.PNG" class="card-img-top" alt="ColorGame">
+          <div class="card-body">
+            <p class="card-text" id="texto1">Juego de colores: adivina el color que aparece en hexadecimal</p>
+          </div>
+        </a>
+
+        <a href="https://regal-sorbet-4ec10b.netlify.app/" class="card" style="width: 18rem;" id="toDo">
+          <img src="ToDo-list.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text" id="texto2">Organiza tus tareas con este intuitivo y user-friendly editor de tareas.</p>
+          </div>
+        </a>
+      
+        <a href="https://rad-chaja-fd5f5f.netlify.app/" class="card" style="width: 18rem;" id="weatherChannel">
+          <img src="Weather_channel.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text" id="texto3">Mantiente al tanto del clima y pronóstico de cualquier parte del mundo.</p>
+          </div>
+        </a>
     </div>
 
-    <div id="carouselExampleControls" class="carousel slide container w-50 au-pequeno" data-bs-ride="carousel">
+    <!-- Carrusel -->
+
+    <div id="carusel">
+    <div id="carouselExampleControls" class="carousel slide w-50 au-pequeno" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="aM7ZZ3Kk_700w_0.jpg" class="d-block w-100" alt="..." />
+          <a href="https://adorable-clafoutis-a03d90.netlify.app/">
+            <img src="ColorGame.PNG" alt="ColorGame">
+          </a>
         </div>
         <div class="carousel-item">
-          <img
-            src="aM7ZZ3Kk_700w_0 - copia (2).jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <a href="https://regal-sorbet-4ec10b.netlify.app/">
+            <img src="ToDo-list.PNG" alt="ToDo-list">
+          </a>
         </div>
         <div class="carousel-item">
-          <img
-            src="aM7ZZ3Kk_700w_0 - copia.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <a href="https://rad-chaja-fd5f5f.netlify.app/">
+            <img src="Weather_channel.PNG" alt="Weather_channel">
+          </a>
         </div>
       </div>
       <button
@@ -103,76 +140,92 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <!-- acerca de mi -->
-
-    <div class="borde au">
-      <h2></h2>
-      <p>.................</p>
-    </div>
+  </div>
 
     <!-- contacto -->
 
-    <div class="container">
-      <form class="borde">
+    <div id="contacto">
+      <form action="https://formspree.io/f/xknajard" method="POST" class="borde">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Username</label>
+          <label id="usuario" for="exampleInputEmail1" class="form-label labelo">Usuario</label>
           <input
-            type="email"
+            type="text"
             class="form-control"
             id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+            required
           />
-          <div id="emailHelp" class="form-text">
-            We'll never share your username with anyone else, except my interior
-            ghosts UwU.
-          </div>
+          
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
+          <label id="correo" for="exampleInputEmail1" class="form-label labelo"
+            >Correo electrónico</label
           >
           <input
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+            id="exampleInputEmail2"
+            required
           />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
+          
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
+        <div class="mb-3">
+          <label id="telefono" for="exampleInputEmail1" class="form-label labelo"
+            >Nro de teléfono</label
           >
+          <input
+            type="number"
+            class="form-control"
+            id="exampleInputEmail3"            
+          />
+          
         </div>
-        <button type="submit" class="centrar btn btn-primary">Submit</button>
+
+        <div class="mb-3">
+          <label id="mensaje" for="exampleInputEmail1" class="form-label labelo"
+            >Mensaje</label
+          >
+          <textarea
+            type="text"
+            class="form-control"
+            id="exampleInputEmail4"
+            rows="5"
+            required
+          ></textarea>
+          
+        </div>
+        <button id="submit" type="submit" class="centrar btn btn-primary">Mandar mail</button>
       </form>
     </div>
 
     <!-- footer -->
-    <div class="container borde">
+    <div id="footer">
       <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
       >
         <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-          >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap" />
-            </svg>
+          <span id="location" class="mb-3 mb-md-0 text-muted">CABA, Argentina - 19 de mayo del 2023</span>
+          <a href="#barra" id="AboutMeFooter" class="mb-3 mb-md-0 text-muted">
+            <span>Acerca de mi</span>
           </a>
-          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+          
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><i class="bi bi-facebook"></i></li>
-          <li class="ms-3"><i class="bi bi-linkedin"></i></li>
-          <li class="ms-3"><i class="bi bi-github"></i></li>
+          <li class="ms-3">
+            <a href="https://www.instagram.com/rocamboler529/" id="fb">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="https://www.linkedin.com/in/francisco-avalos-88257a195/" id="In">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li id="git" class="ms-3">
+            <a href="https://github.com/ROCAMBOLER529" id="git">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
         </ul>
       </footer>
     </div>
